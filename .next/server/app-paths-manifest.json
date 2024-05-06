@@ -1,0 +1,5 @@
+{
+  "/not-found": "app/not-found.js",
+  "/icon.jpg/route": "app/icon.jpg/route.js",
+  "/archive/@archive/[year]/page": "app/archive/@archive/[year]/page.js"
+}
