@@ -1,1 +1,4 @@
 node_modules
+
+# Ignore hot update files
+/next/static/webpack/*.hot-update.*
