@@ -2,3 +2,6 @@ node_modules
 
 # Ignore hot update files
 /next/static/webpack/*.hot-update.*
+
+# Next.js build output
+.next/
