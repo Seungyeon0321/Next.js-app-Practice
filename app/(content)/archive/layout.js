@@ -1,5 +1,3 @@
-import "../globals.css";
-
 export default function NewsLayout({ archive, latest }) {
   return (
     <div>
