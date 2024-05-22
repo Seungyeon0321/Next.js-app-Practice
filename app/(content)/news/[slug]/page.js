@@ -1,11 +1,11 @@
-import { DUMMY_NEWS } from "@/dummy-news";
 import { notFound } from "next/navigation";
 
 import Link from "next/link";
+import { getNewsItem } from "@/lib/news";
 
-export default function NewsPage({ params }) {
+export default async function NewsPage({ params }) {
   const newsSlug = params.slug;
-  const newsItem = DUMMY_NEWS.find((newsItem) => newsItem.slug === newsSlug);
+  const newsItem = await getNewsItem(newsSlug);
 
   //not-found.js가 동작 안 하는 이유는 Next.js는 실제로 이 페이지가 존재하는지 알 수 없다, 즉 newsItem이 있는지 없는지 알 수 없음.
   if (!newsItem) {
