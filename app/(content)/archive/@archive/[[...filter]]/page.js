@@ -24,6 +24,7 @@ async function FilterHeader({ year, month }) {
   }
 
   if (year && month) {
+    //month을 클릭하면 해당 달이 안보이기 때문에 이렇게 빈 배열로 안 보이게 한다.
     links = [];
   }
 
@@ -69,7 +70,7 @@ async function FilteredNews({ year, month }) {
   return newsContent;
 }
 
-export default async function FilteredNewsPage({ params }) {
+export default function FilteredNewsPage({ params }) {
   const filter = params.filter;
 
   const selectedYear = filter?.[0];
